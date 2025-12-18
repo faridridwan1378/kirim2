@@ -30,55 +30,55 @@
         .header {
             background: linear-gradient(135deg, #1e3c72 0%, #2a5298 100%);
             color: white;
-            padding: 30px;
+            padding: 25px;
             text-align: center;
         }
 
         .header h1 {
-            font-size: 28px;
-            margin-bottom: 10px;
+            font-size: 24px;
+            margin-bottom: 5px;
         }
 
         .header p {
             opacity: 0.9;
-            font-size: 14px;
+            font-size: 13px;
         }
 
         .logo {
-            font-size: 50px;
-            margin-bottom: 15px;
+            font-size: 40px;
+            margin-bottom: 10px;
         }
 
         .form-container {
-            padding: 40px;
+            padding: 30px;
         }
 
         .section {
-            margin-bottom: 35px;
-            padding: 25px;
+            margin-bottom: 25px;
+            padding: 20px;
             background: #f8f9fa;
-            border-radius: 15px;
-            border-left: 5px solid #2a5298;
+            border-radius: 12px;
+            border-left: 4px solid #2a5298;
         }
 
         .section-title {
-            font-size: 18px;
+            font-size: 16px;
             color: #1e3c72;
-            margin-bottom: 20px;
+            margin-bottom: 15px;
             display: flex;
             align-items: center;
-            gap: 10px;
+            gap: 8px;
         }
 
         .section-title span {
-            font-size: 24px;
+            font-size: 20px;
         }
 
         .form-row {
             display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-            gap: 20px;
-            margin-bottom: 15px;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 15px;
+            margin-bottom: 12px;
         }
 
         .form-group {
@@ -89,8 +89,8 @@
         .form-group label {
             font-weight: 600;
             color: #333;
-            margin-bottom: 8px;
-            font-size: 14px;
+            margin-bottom: 6px;
+            font-size: 13px;
         }
 
         .form-group label .required {
@@ -100,10 +100,10 @@
         .form-group input,
         .form-group select,
         .form-group textarea {
-            padding: 12px 15px;
+            padding: 10px 12px;
             border: 2px solid #e0e0e0;
-            border-radius: 10px;
-            font-size: 14px;
+            border-radius: 8px;
+            font-size: 13px;
             transition: all 0.3s ease;
         }
 
@@ -112,46 +112,51 @@
         .form-group textarea:focus {
             border-color: #2a5298;
             outline: none;
-            box-shadow: 0 0 0 4px rgba(42, 82, 152, 0.1);
+            box-shadow: 0 0 0 3px rgba(42, 82, 152, 0.1);
         }
 
         .form-group textarea {
             resize: vertical;
-            min-height: 80px;
+            min-height: 60px;
         }
 
         .checkbox-group {
             display: flex;
             align-items: center;
-            gap: 10px;
-            margin-top: 10px;
+            gap: 8px;
+            margin-top: 8px;
         }
 
         .checkbox-group input[type="checkbox"] {
-            width: 20px;
-            height: 20px;
+            width: 18px;
+            height: 18px;
+            cursor: pointer;
+        }
+
+        .checkbox-group label {
+            font-size: 13px;
             cursor: pointer;
         }
 
         .btn-container {
             display: flex;
-            gap: 15px;
+            gap: 12px;
             justify-content: center;
             flex-wrap: wrap;
-            margin-top: 30px;
+            margin-top: 25px;
         }
 
         .btn {
-            padding: 15px 40px;
+            padding: 12px 30px;
             border: none;
             border-radius: 50px;
-            font-size: 16px;
+            font-size: 14px;
             font-weight: 600;
             cursor: pointer;
             transition: all 0.3s ease;
             display: flex;
             align-items: center;
-            gap: 10px;
+            gap: 8px;
         }
 
         .btn-primary {
@@ -160,8 +165,8 @@
         }
 
         .btn-primary:hover {
-            transform: translateY(-3px);
-            box-shadow: 0 10px 30px rgba(30, 60, 114, 0.4);
+            transform: translateY(-2px);
+            box-shadow: 0 8px 25px rgba(30, 60, 114, 0.4);
         }
 
         .btn-success {
@@ -170,8 +175,8 @@
         }
 
         .btn-success:hover {
-            transform: translateY(-3px);
-            box-shadow: 0 10px 30px rgba(17, 153, 142, 0.4);
+            transform: translateY(-2px);
+            box-shadow: 0 8px 25px rgba(17, 153, 142, 0.4);
         }
 
         .btn-danger {
@@ -180,11 +185,59 @@
         }
 
         .btn-danger:hover {
-            transform: translateY(-3px);
-            box-shadow: 0 10px 30px rgba(235, 51, 73, 0.4);
+            transform: translateY(-2px);
+            box-shadow: 0 8px 25px rgba(235, 51, 73, 0.4);
         }
 
-        /* Print Preview Styles */
+        /* Tracking Number Display */
+        .tracking-display {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            padding: 15px 20px;
+            border-radius: 12px;
+            text-align: center;
+            margin-bottom: 20px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            flex-wrap: wrap;
+            gap: 10px;
+        }
+
+        .tracking-info {
+            text-align: left;
+        }
+
+        .tracking-info label {
+            font-size: 12px;
+            opacity: 0.9;
+        }
+
+        .tracking-number {
+            font-family: 'Courier New', monospace;
+            font-size: 24px;
+            letter-spacing: 2px;
+            font-weight: bold;
+            margin-top: 3px;
+        }
+
+        .btn-generate {
+            background: rgba(255,255,255,0.2);
+            color: white;
+            border: 2px solid white;
+            padding: 10px 20px;
+            border-radius: 25px;
+            cursor: pointer;
+            font-weight: 600;
+            transition: all 0.3s;
+        }
+
+        .btn-generate:hover {
+            background: white;
+            color: #667eea;
+        }
+
+        /* Print Preview Modal */
         .print-preview {
             display: none;
             position: fixed;
@@ -192,7 +245,7 @@
             left: 0;
             width: 100%;
             height: 100%;
-            background: rgba(0,0,0,0.8);
+            background: rgba(0,0,0,0.9);
             z-index: 1000;
             overflow: auto;
             padding: 20px;
@@ -203,207 +256,295 @@
         }
 
         .print-content {
-            max-width: 800px;
+            width: 210mm;
+            min-height: 297mm;
+            max-height: 297mm;
             margin: 0 auto;
             background: white;
-            padding: 40px;
-            border-radius: 10px;
+            padding: 15mm;
+            overflow: hidden;
         }
 
         .print-header {
             text-align: center;
-            border-bottom: 3px double #333;
-            padding-bottom: 20px;
-            margin-bottom: 30px;
+            border-bottom: 2px solid #333;
+            padding-bottom: 10px;
+            margin-bottom: 12px;
         }
 
         .print-header h2 {
-            font-size: 24px;
+            font-size: 18px;
             color: #1e3c72;
+            margin-bottom: 3px;
         }
 
         .print-header p {
             color: #666;
-            margin-top: 5px;
+            font-size: 11px;
+        }
+
+        .barcode-section {
+            text-align: center;
+            margin: 10px 0;
+            padding: 10px;
+            background: #f5f5f5;
+            border: 2px dashed #333;
+        }
+
+        .barcode-number {
+            font-family: 'Courier New', monospace;
+            font-size: 28px;
+            letter-spacing: 4px;
+            font-weight: bold;
+        }
+
+        .barcode-label {
+            font-size: 10px;
+            color: #666;
+            margin-top: 3px;
+        }
+
+        .print-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 10px;
+            margin-bottom: 10px;
         }
 
         .print-section {
-            margin-bottom: 25px;
-            padding: 20px;
+            padding: 10px;
             border: 1px solid #ddd;
-            border-radius: 10px;
+            border-radius: 5px;
         }
 
         .print-section h3 {
             color: #1e3c72;
-            border-bottom: 2px solid #1e3c72;
-            padding-bottom: 10px;
-            margin-bottom: 15px;
-            font-size: 16px;
+            font-size: 12px;
+            border-bottom: 1px solid #1e3c72;
+            padding-bottom: 5px;
+            margin-bottom: 8px;
         }
 
         .print-row {
             display: flex;
-            margin-bottom: 10px;
+            margin-bottom: 4px;
+            font-size: 11px;
         }
 
         .print-label {
-            width: 150px;
+            width: 80px;
             font-weight: 600;
             color: #555;
+            flex-shrink: 0;
         }
 
         .print-value {
             flex: 1;
             color: #333;
+            word-break: break-word;
+        }
+
+        .print-section-full {
+            padding: 10px;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            margin-bottom: 10px;
+        }
+
+        .print-section-full h3 {
+            color: #1e3c72;
+            font-size: 12px;
+            border-bottom: 1px solid #1e3c72;
+            padding-bottom: 5px;
+            margin-bottom: 8px;
+        }
+
+        .print-grid-4 {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 8px;
+        }
+
+        .print-grid-3 {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 8px;
+        }
+
+        .print-item {
+            font-size: 11px;
+        }
+
+        .print-item .label {
+            font-weight: 600;
+            color: #555;
+            display: block;
+            margin-bottom: 2px;
+        }
+
+        .print-item .value {
+            color: #333;
         }
 
         .print-footer {
-            margin-top: 40px;
-            padding-top: 20px;
-            border-top: 2px solid #ddd;
+            margin-top: 15px;
+            padding-top: 10px;
+            border-top: 1px solid #ddd;
             display: grid;
-            grid-template-columns: 1fr 1fr 1fr;
+            grid-template-columns: repeat(3, 1fr);
             text-align: center;
-            gap: 20px;
+            gap: 15px;
         }
 
         .signature-box {
-            padding: 20px;
+            padding: 8px;
             border: 1px dashed #999;
-            border-radius: 10px;
+            border-radius: 5px;
         }
 
         .signature-box p {
-            margin-bottom: 60px;
+            font-size: 11px;
             font-weight: 600;
+            margin-bottom: 35px;
         }
 
         .signature-line {
             border-top: 1px solid #333;
-            padding-top: 10px;
-            font-size: 12px;
+            padding-top: 5px;
+            font-size: 10px;
             color: #666;
         }
 
-        .barcode {
-            text-align: center;
-            margin: 20px 0;
-            padding: 15px;
-            background: #f5f5f5;
-            border-radius: 10px;
+        .print-notes {
+            margin-top: 10px;
+            padding: 8px;
+            background: #fff3cd;
+            border: 1px solid #ffc107;
+            border-radius: 5px;
+            font-size: 10px;
         }
 
-        .barcode-number {
-            font-family: 'Courier New', monospace;
-            font-size: 24px;
-            letter-spacing: 5px;
-            font-weight: bold;
+        .print-notes strong {
+            color: #856404;
         }
 
         .close-preview {
             position: fixed;
-            top: 20px;
-            right: 30px;
-            font-size: 40px;
+            top: 15px;
+            right: 25px;
+            font-size: 35px;
             color: white;
             cursor: pointer;
             z-index: 1001;
+            transition: transform 0.3s;
+        }
+
+        .close-preview:hover {
+            transform: scale(1.2);
         }
 
         .print-btn-container {
             text-align: center;
-            margin-top: 30px;
+            margin-top: 20px;
+            padding: 15px;
+            background: #333;
+            border-radius: 10px;
+            max-width: 210mm;
+            margin-left: auto;
+            margin-right: auto;
         }
 
-        /* Print Styles */
+        .print-btn-container .btn {
+            margin: 5px;
+        }
+
+        /* Print Styles - A4 */
         @media print {
+            @page {
+                size: A4 portrait;
+                margin: 0;
+            }
+
+            * {
+                -webkit-print-color-adjust: exact !important;
+                print-color-adjust: exact !important;
+            }
+
             body {
-                background: white;
-                padding: 0;
+                background: white !important;
+                padding: 0 !important;
+                margin: 0 !important;
             }
 
-            .container {
-                display: none;
-            }
-
-            .print-preview {
-                display: block !important;
-                position: static;
-                background: white;
-                padding: 0;
-            }
-
+            .container,
             .close-preview,
             .print-btn-container {
                 display: none !important;
             }
 
-            .print-content {
-                box-shadow: none;
-                padding: 20px;
+            .print-preview {
+                display: block !important;
+                position: static !important;
+                background: white !important;
+                padding: 0 !important;
             }
 
-            .print-section {
-                break-inside: avoid;
+            .print-content {
+                width: 100% !important;
+                min-height: auto !important;
+                max-height: none !important;
+                padding: 10mm !important;
+                margin: 0 !important;
+                box-shadow: none !important;
+            }
+
+            .barcode-section {
+                background: #f5f5f5 !important;
+            }
+
+            .print-notes {
+                background: #fff3cd !important;
             }
         }
 
         /* Responsive */
         @media (max-width: 768px) {
             .form-container {
-                padding: 20px;
+                padding: 15px;
             }
 
             .section {
                 padding: 15px;
             }
 
-            .print-footer {
-                grid-template-columns: 1fr;
+            .tracking-display {
+                flex-direction: column;
+                text-align: center;
+            }
+
+            .tracking-info {
+                text-align: center;
             }
 
             .print-content {
-                padding: 20px;
+                width: 100%;
+                min-height: auto;
+                max-height: none;
+                padding: 15px;
             }
-        }
 
-        /* Animation */
-        @keyframes fadeIn {
-            from { opacity: 0; transform: translateY(20px); }
-            to { opacity: 1; transform: translateY(0); }
-        }
+            .print-grid {
+                grid-template-columns: 1fr;
+            }
 
-        .section {
-            animation: fadeIn 0.5s ease forwards;
-        }
+            .print-grid-4,
+            .print-grid-3 {
+                grid-template-columns: 1fr 1fr;
+            }
 
-        .section:nth-child(2) { animation-delay: 0.1s; }
-        .section:nth-child(3) { animation-delay: 0.2s; }
-        .section:nth-child(4) { animation-delay: 0.3s; }
-        .section:nth-child(5) { animation-delay: 0.4s; }
-
-        /* Tracking Number Style */
-        .tracking-display {
-            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
-            color: white;
-            padding: 15px 25px;
-            border-radius: 10px;
-            text-align: center;
-            margin-bottom: 20px;
-        }
-
-        .tracking-display label {
-            color: white !important;
-            opacity: 0.9;
-        }
-
-        .tracking-number {
-            font-family: 'Courier New', monospace;
-            font-size: 28px;
-            letter-spacing: 3px;
-            font-weight: bold;
-            margin-top: 10px;
+            .print-footer {
+                grid-template-columns: 1fr;
+            }
         }
     </style>
 </head>
@@ -419,8 +560,13 @@
             <form id="shippingForm">
                 <!-- Tracking Number -->
                 <div class="tracking-display">
-                    <label>Nomor Resi / Tracking Number</label>
-                    <div class="tracking-number" id="trackingNumber">-</div>
+                    <div class="tracking-info">
+                        <label>Nomor Resi / Tracking Number</label>
+                        <div class="tracking-number" id="trackingNumber">-</div>
+                    </div>
+                    <button type="button" class="btn-generate" id="btnGenerate">
+                        🔢 Generate Resi Baru
+                    </button>
                 </div>
 
                 <!-- Data Pengirim -->
@@ -429,16 +575,16 @@
                     <div class="form-row">
                         <div class="form-group">
                             <label>Nama Lengkap <span class="required">*</span></label>
-                            <input type="text" id="senderName" required placeholder="Masukkan nama pengirim">
+                            <input type="text" id="senderName" required placeholder="Nama pengirim">
                         </div>
                         <div class="form-group">
-                            <label>No. Telepon / WhatsApp <span class="required">*</span></label>
+                            <label>No. Telepon <span class="required">*</span></label>
                             <input type="tel" id="senderPhone" required placeholder="08xxxxxxxxxx">
                         </div>
                     </div>
                     <div class="form-group">
                         <label>Alamat Lengkap <span class="required">*</span></label>
-                        <textarea id="senderAddress" required placeholder="Masukkan alamat lengkap pengirim"></textarea>
+                        <textarea id="senderAddress" required placeholder="Alamat lengkap pengirim"></textarea>
                     </div>
                     <div class="form-row">
                         <div class="form-group">
@@ -447,7 +593,7 @@
                         </div>
                         <div class="form-group">
                             <label>Kode Pos</label>
-                            <input type="text" id="senderPostal" placeholder="Contoh: 12345">
+                            <input type="text" id="senderPostal" placeholder="12345">
                         </div>
                     </div>
                 </div>
@@ -458,16 +604,16 @@
                     <div class="form-row">
                         <div class="form-group">
                             <label>Nama Lengkap <span class="required">*</span></label>
-                            <input type="text" id="receiverName" required placeholder="Masukkan nama penerima">
+                            <input type="text" id="receiverName" required placeholder="Nama penerima">
                         </div>
                         <div class="form-group">
-                            <label>No. Telepon / WhatsApp <span class="required">*</span></label>
+                            <label>No. Telepon <span class="required">*</span></label>
                             <input type="tel" id="receiverPhone" required placeholder="08xxxxxxxxxx">
                         </div>
                     </div>
                     <div class="form-group">
                         <label>Alamat Lengkap <span class="required">*</span></label>
-                        <textarea id="receiverAddress" required placeholder="Masukkan alamat lengkap penerima"></textarea>
+                        <textarea id="receiverAddress" required placeholder="Alamat lengkap penerima"></textarea>
                     </div>
                     <div class="form-row">
                         <div class="form-group">
@@ -480,7 +626,7 @@
                         </div>
                         <div class="form-group">
                             <label>Kode Pos <span class="required">*</span></label>
-                            <input type="text" id="receiverPostal" required placeholder="Contoh: 60123">
+                            <input type="text" id="receiverPostal" required placeholder="60123">
                         </div>
                     </div>
                 </div>
@@ -492,7 +638,7 @@
                         <div class="form-group">
                             <label>Jenis Barang <span class="required">*</span></label>
                             <select id="itemType" required>
-                                <option value="">-- Pilih Jenis Barang --</option>
+                                <option value="">-- Pilih Jenis --</option>
                                 <option value="Dokumen">Dokumen</option>
                                 <option value="Elektronik">Elektronik</option>
                                 <option value="Pakaian">Pakaian</option>
@@ -504,27 +650,27 @@
                             </select>
                         </div>
                         <div class="form-group">
-                            <label>Nama/Deskripsi Barang <span class="required">*</span></label>
+                            <label>Nama Barang <span class="required">*</span></label>
                             <input type="text" id="itemName" required placeholder="Contoh: Laptop Asus">
                         </div>
                     </div>
                     <div class="form-row">
                         <div class="form-group">
-                            <label>Jumlah Barang (Koli) <span class="required">*</span></label>
-                            <input type="number" id="itemQty" required min="1" value="1" placeholder="1">
+                            <label>Jumlah (Koli) <span class="required">*</span></label>
+                            <input type="number" id="itemQty" required min="1" value="1">
                         </div>
                         <div class="form-group">
                             <label>Berat (Kg) <span class="required">*</span></label>
-                            <input type="number" id="itemWeight" required min="0.1" step="0.1" placeholder="Contoh: 2.5">
+                            <input type="number" id="itemWeight" required min="0.1" step="0.1" placeholder="2.5">
                         </div>
                         <div class="form-group">
                             <label>Nilai Barang (Rp)</label>
-                            <input type="number" id="itemValue" placeholder="Contoh: 5000000">
+                            <input type="number" id="itemValue" placeholder="5000000">
                         </div>
                     </div>
                     <div class="form-group">
                         <label>Catatan Khusus</label>
-                        <textarea id="itemNotes" placeholder="Contoh: Barang mudah pecah, harap hati-hati"></textarea>
+                        <textarea id="itemNotes" placeholder="Contoh: Barang mudah pecah"></textarea>
                     </div>
                 </div>
 
@@ -536,11 +682,11 @@
                             <label>Jenis Layanan <span class="required">*</span></label>
                             <select id="serviceType" required>
                                 <option value="">-- Pilih Layanan --</option>
-                                <option value="Regular">Regular (3-5 hari)</option>
-                                <option value="Express">Express (1-2 hari)</option>
+                                <option value="Regular (3-5 hari)">Regular (3-5 hari)</option>
+                                <option value="Express (1-2 hari)">Express (1-2 hari)</option>
                                 <option value="Same Day">Same Day</option>
                                 <option value="Next Day">Next Day</option>
-                                <option value="Cargo">Cargo (5-7 hari)</option>
+                                <option value="Cargo (5-7 hari)">Cargo (5-7 hari)</option>
                             </select>
                         </div>
                         <div class="form-group">
@@ -554,25 +700,24 @@
                             </select>
                         </div>
                     </div>
-                    <div class="checkbox-group">
-                        <input type="checkbox" id="insurance">
-                        <label for="insurance">Tambah Asuransi Pengiriman</label>
-                    </div>
-                    <div class="checkbox-group">
-                        <input type="checkbox" id="fragile">
-                        <label for="fragile">Barang Mudah Pecah (Fragile)</label>
+                    <div style="display: flex; gap: 20px; flex-wrap: wrap;">
+                        <div class="checkbox-group">
+                            <input type="checkbox" id="insurance">
+                            <label for="insurance">Asuransi Pengiriman</label>
+                        </div>
+                        <div class="checkbox-group">
+                            <input type="checkbox" id="fragile">
+                            <label for="fragile">Barang Mudah Pecah (Fragile)</label>
+                        </div>
                     </div>
                 </div>
 
                 <!-- Buttons -->
                 <div class="btn-container">
-                    <button type="button" class="btn btn-primary" onclick="generateTracking()">
-                        🔢 Generate Resi
-                    </button>
-                    <button type="button" class="btn btn-success" onclick="previewPrint()">
+                    <button type="button" class="btn btn-success" id="btnPreview">
                         👁️ Preview & Print
                     </button>
-                    <button type="reset" class="btn btn-danger" onclick="resetForm()">
+                    <button type="reset" class="btn btn-danger" id="btnReset">
                         🔄 Reset Form
                     </button>
                 </div>
@@ -582,237 +727,303 @@
 
     <!-- Print Preview Modal -->
     <div class="print-preview" id="printPreview">
-        <span class="close-preview" onclick="closePreview()">&times;</span>
+        <span class="close-preview" id="closePreview">&times;</span>
         <div class="print-content" id="printContent">
             <!-- Content will be generated by JavaScript -->
+        </div>
+        <div class="print-btn-container">
+            <button class="btn btn-primary" id="btnPrint">🖨️ Cetak Dokumen</button>
+            <button class="btn btn-danger" id="btnClose">✖️ Tutup Preview</button>
         </div>
     </div>
 
     <script>
-        // Generate Tracking Number
-        function generateTracking() {
-            const date = new Date();
-            const year = date.getFullYear().toString().substr(-2);
-            const month = String(date.getMonth() + 1).padStart(2, '0');
-            const day = String(date.getDate()).padStart(2, '0');
-            const random = Math.floor(Math.random() * 900000) + 100000;
-            const tracking = `TRK${year}${month}${day}${random}`;
-            document.getElementById('trackingNumber').textContent = tracking;
-        }
-
-        // Reset Form
-        function resetForm() {
-            document.getElementById('shippingForm').reset();
-            document.getElementById('trackingNumber').textContent = '-';
-        }
-
-        // Format Currency
-        function formatCurrency(num) {
-            if (!num) return '-';
-            return 'Rp ' + parseInt(num).toLocaleString('id-ID');
-        }
-
-        // Preview Print
-        function previewPrint() {
-            const form = document.getElementById('shippingForm');
+        // Wait for DOM to be fully loaded
+        document.addEventListener('DOMContentLoaded', function() {
             
-            if (!form.checkValidity()) {
-                form.reportValidity();
-                return;
+            // Element References
+            const trackingDisplay = document.getElementById('trackingNumber');
+            const btnGenerate = document.getElementById('btnGenerate');
+            const btnPreview = document.getElementById('btnPreview');
+            const btnReset = document.getElementById('btnReset');
+            const btnPrint = document.getElementById('btnPrint');
+            const btnClose = document.getElementById('btnClose');
+            const closePreview = document.getElementById('closePreview');
+            const printPreview = document.getElementById('printPreview');
+            const printContent = document.getElementById('printContent');
+            const shippingForm = document.getElementById('shippingForm');
+
+            // Generate Tracking Number Function
+            function generateTrackingNumber() {
+                const now = new Date();
+                const year = now.getFullYear().toString().substr(-2);
+                const month = String(now.getMonth() + 1).padStart(2, '0');
+                const day = String(now.getDate()).padStart(2, '0');
+                const hour = String(now.getHours()).padStart(2, '0');
+                const min = String(now.getMinutes()).padStart(2, '0');
+                const random = Math.floor(Math.random() * 9000) + 1000;
+                const tracking = 'TRK' + year + month + day + hour + min + random;
+                trackingDisplay.textContent = tracking;
+                console.log('Generated tracking:', tracking);
             }
 
-            const tracking = document.getElementById('trackingNumber').textContent;
-            if (tracking === '-') {
-                alert('Silakan generate nomor resi terlebih dahulu!');
-                return;
-            }
+            // Generate on page load
+            generateTrackingNumber();
 
-            const data = {
-                tracking: tracking,
-                sender: {
-                    name: document.getElementById('senderName').value,
-                    phone: document.getElementById('senderPhone').value,
-                    address: document.getElementById('senderAddress').value,
-                    city: document.getElementById('senderCity').value,
-                    postal: document.getElementById('senderPostal').value || '-'
-                },
-                receiver: {
-                    name: document.getElementById('receiverName').value,
-                    phone: document.getElementById('receiverPhone').value,
-                    address: document.getElementById('receiverAddress').value,
-                    city: document.getElementById('receiverCity').value,
-                    province: document.getElementById('receiverProvince').value,
-                    postal: document.getElementById('receiverPostal').value
-                },
-                item: {
-                    type: document.getElementById('itemType').value,
-                    name: document.getElementById('itemName').value,
-                    qty: document.getElementById('itemQty').value,
-                    weight: document.getElementById('itemWeight').value,
-                    value: document.getElementById('itemValue').value,
-                    notes: document.getElementById('itemNotes').value || '-'
-                },
-                service: {
-                    type: document.getElementById('serviceType').value,
-                    payment: document.getElementById('paymentMethod').value,
-                    insurance: document.getElementById('insurance').checked ? 'Ya' : 'Tidak',
-                    fragile: document.getElementById('fragile').checked ? 'Ya' : 'Tidak'
-                }
-            };
-
-            const today = new Date().toLocaleDateString('id-ID', {
-                weekday: 'long',
-                year: 'numeric',
-                month: 'long',
-                day: 'numeric'
+            // Generate Button Click
+            btnGenerate.addEventListener('click', function(e) {
+                e.preventDefault();
+                generateTrackingNumber();
             });
 
-            const printHTML = `
-                <div class="print-header">
-                    <h2>📦 SURAT JALAN PENGIRIMAN</h2>
-                    <p>Tanggal: ${today}</p>
-                </div>
+            // Reset Form
+            btnReset.addEventListener('click', function() {
+                shippingForm.reset();
+                generateTrackingNumber();
+            });
 
-                <div class="barcode">
-                    <div class="barcode-number">${data.tracking}</div>
-                    <p style="margin-top: 10px; font-size: 12px; color: #666;">Nomor Resi / Tracking Number</p>
-                </div>
-
-                <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 20px;">
-                    <div class="print-section">
-                        <h3>👤 PENGIRIM</h3>
-                        <div class="print-row">
-                            <span class="print-label">Nama</span>
-                            <span class="print-value">: ${data.sender.name}</span>
-                        </div>
-                        <div class="print-row">
-                            <span class="print-label">Telepon</span>
-                            <span class="print-value">: ${data.sender.phone}</span>
-                        </div>
-                        <div class="print-row">
-                            <span class="print-label">Alamat</span>
-                            <span class="print-value">: ${data.sender.address}</span>
-                        </div>
-                        <div class="print-row">
-                            <span class="print-label">Kota</span>
-                            <span class="print-value">: ${data.sender.city} ${data.sender.postal}</span>
-                        </div>
-                    </div>
-
-                    <div class="print-section">
-                        <h3>📍 PENERIMA</h3>
-                        <div class="print-row">
-                            <span class="print-label">Nama</span>
-                            <span class="print-value">: ${data.receiver.name}</span>
-                        </div>
-                        <div class="print-row">
-                            <span class="print-label">Telepon</span>
-                            <span class="print-value">: ${data.receiver.phone}</span>
-                        </div>
-                        <div class="print-row">
-                            <span class="print-label">Alamat</span>
-                            <span class="print-value">: ${data.receiver.address}</span>
-                        </div>
-                        <div class="print-row">
-                            <span class="print-label">Kota</span>
-                            <span class="print-value">: ${data.receiver.city}, ${data.receiver.province} ${data.receiver.postal}</span>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="print-section">
-                    <h3>📦 DETAIL BARANG</h3>
-                    <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 10px;">
-                        <div class="print-row">
-                            <span class="print-label">Jenis Barang</span>
-                            <span class="print-value">: ${data.item.type}</span>
-                        </div>
-                        <div class="print-row">
-                            <span class="print-label">Nama Barang</span>
-                            <span class="print-value">: ${data.item.name}</span>
-                        </div>
-                        <div class="print-row">
-                            <span class="print-label">Jumlah</span>
-                            <span class="print-value">: ${data.item.qty} Koli</span>
-                        </div>
-                        <div class="print-row">
-                            <span class="print-label">Berat</span>
-                            <span class="print-value">: ${data.item.weight} Kg</span>
-                        </div>
-                        <div class="print-row">
-                            <span class="print-label">Nilai Barang</span>
-                            <span class="print-value">: ${formatCurrency(data.item.value)}</span>
-                        </div>
-                        <div class="print-row">
-                            <span class="print-label">Catatan</span>
-                            <span class="print-value">: ${data.item.notes}</span>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="print-section">
-                    <h3>🚚 LAYANAN PENGIRIMAN</h3>
-                    <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 10px;">
-                        <div class="print-row">
-                            <span class="print-label">Jenis Layanan</span>
-                            <span class="print-value">: ${data.service.type}</span>
-                        </div>
-                        <div class="print-row">
-                            <span class="print-label">Pembayaran</span>
-                            <span class="print-value">: ${data.service.payment}</span>
-                        </div>
-                        <div class="print-row">
-                            <span class="print-label">Asuransi</span>
-                            <span class="print-value">: ${data.service.insurance}</span>
-                        </div>
-                        <div class="print-row">
-                            <span class="print-label">Fragile</span>
-                            <span class="print-value">: ${data.service.fragile}</span>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="print-footer">
-                    <div class="signature-box">
-                        <p>Pengirim</p>
-                        <div class="signature-line">(${data.sender.name})</div>
-                    </div>
-                    <div class="signature-box">
-                        <p>Kurir</p>
-                        <div class="signature-line">(............................)</div>
-                    </div>
-                    <div class="signature-box">
-                        <p>Penerima</p>
-                        <div class="signature-line">(${data.receiver.name})</div>
-                    </div>
-                </div>
-
-                <div class="print-btn-container">
-                    <button class="btn btn-primary" onclick="window.print()">🖨️ Cetak Dokumen</button>
-                    <button class="btn btn-danger" onclick="closePreview()" style="margin-left: 10px;">✖️ Tutup</button>
-                </div>
-            `;
-
-            document.getElementById('printContent').innerHTML = printHTML;
-            document.getElementById('printPreview').classList.add('active');
-        }
-
-        // Close Preview
-        function closePreview() {
-            document.getElementById('printPreview').classList.remove('active');
-        }
-
-        // Close preview with Escape key
-        document.addEventListener('keydown', function(e) {
-            if (e.key === 'Escape') {
-                closePreview();
+            // Format Currency
+            function formatRupiah(num) {
+                if (!num || num === '') return '-';
+                return 'Rp ' + parseInt(num).toLocaleString('id-ID');
             }
-        });
 
-        // Auto-generate tracking on page load
-        window.onload = function() {
-            generateTracking();
-        };
+            // Get Current Date
+            function getCurrentDate() {
+                const options = { 
+                    weekday: 'long', 
+                    year: 'numeric', 
+                    month: 'long', 
+                    day: 'numeric' 
+                };
+                return new Date().toLocaleDateString('id-ID', options);
+            }
+
+            // Get Current Time
+            function getCurrentTime() {
+                return new Date().toLocaleTimeString('id-ID', {
+                    hour: '2-digit',
+                    minute: '2-digit'
+                });
+            }
+
+            // Preview & Print Function
+            btnPreview.addEventListener('click', function(e) {
+                e.preventDefault();
+                
+                // Validate form
+                if (!shippingForm.checkValidity()) {
+                    shippingForm.reportValidity();
+                    return;
+                }
+
+                const tracking = trackingDisplay.textContent;
+                if (tracking === '-' || tracking === '') {
+                    alert('Silakan generate nomor resi terlebih dahulu!');
+                    return;
+                }
+
+                // Collect form data
+                const data = {
+                    tracking: tracking,
+                    date: getCurrentDate(),
+                    time: getCurrentTime(),
+                    sender: {
+                        name: document.getElementById('senderName').value,
+                        phone: document.getElementById('senderPhone').value,
+                        address: document.getElementById('senderAddress').value,
+                        city: document.getElementById('senderCity').value,
+                        postal: document.getElementById('senderPostal').value || '-'
+                    },
+                    receiver: {
+                        name: document.getElementById('receiverName').value,
+                        phone: document.getElementById('receiverPhone').value,
+                        address: document.getElementById('receiverAddress').value,
+                        city: document.getElementById('receiverCity').value,
+                        province: document.getElementById('receiverProvince').value,
+                        postal: document.getElementById('receiverPostal').value
+                    },
+                    item: {
+                        type: document.getElementById('itemType').value,
+                        name: document.getElementById('itemName').value,
+                        qty: document.getElementById('itemQty').value,
+                        weight: document.getElementById('itemWeight').value,
+                        value: document.getElementById('itemValue').value,
+                        notes: document.getElementById('itemNotes').value || '-'
+                    },
+                    service: {
+                        type: document.getElementById('serviceType').value,
+                        payment: document.getElementById('paymentMethod').value,
+                        insurance: document.getElementById('insurance').checked ? 'Ya' : 'Tidak',
+                        fragile: document.getElementById('fragile').checked ? 'Ya' : 'Tidak'
+                    }
+                };
+
+                // Generate print HTML - Optimized for A4
+                const html = `
+                    <div class="print-header">
+                        <h2>📦 SURAT JALAN PENGIRIMAN BARANG</h2>
+                        <p>${data.date} • Pukul ${data.time} WIB</p>
+                    </div>
+
+                    <div class="barcode-section">
+                        <div class="barcode-number">${data.tracking}</div>
+                        <div class="barcode-label">NOMOR RESI / TRACKING NUMBER</div>
+                    </div>
+
+                    <div class="print-grid">
+                        <div class="print-section">
+                            <h3>👤 PENGIRIM</h3>
+                            <div class="print-row">
+                                <span class="print-label">Nama</span>
+                                <span class="print-value">: ${data.sender.name}</span>
+                            </div>
+                            <div class="print-row">
+                                <span class="print-label">Telepon</span>
+                                <span class="print-value">: ${data.sender.phone}</span>
+                            </div>
+                            <div class="print-row">
+                                <span class="print-label">Alamat</span>
+                                <span class="print-value">: ${data.sender.address}</span>
+                            </div>
+                            <div class="print-row">
+                                <span class="print-label">Kota</span>
+                                <span class="print-value">: ${data.sender.city} ${data.sender.postal}</span>
+                            </div>
+                        </div>
+
+                        <div class="print-section">
+                            <h3>📍 PENERIMA</h3>
+                            <div class="print-row">
+                                <span class="print-label">Nama</span>
+                                <span class="print-value">: ${data.receiver.name}</span>
+                            </div>
+                            <div class="print-row">
+                                <span class="print-label">Telepon</span>
+                                <span class="print-value">: ${data.receiver.phone}</span>
+                            </div>
+                            <div class="print-row">
+                                <span class="print-label">Alamat</span>
+                                <span class="print-value">: ${data.receiver.address}</span>
+                            </div>
+                            <div class="print-row">
+                                <span class="print-label">Kota</span>
+                                <span class="print-value">: ${data.receiver.city}, ${data.receiver.province} ${data.receiver.postal}</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="print-section-full">
+                        <h3>📦 DETAIL BARANG</h3>
+                        <div class="print-grid-4">
+                            <div class="print-item">
+                                <span class="label">Jenis Barang</span>
+                                <span class="value">${data.item.type}</span>
+                            </div>
+                            <div class="print-item">
+                                <span class="label">Nama Barang</span>
+                                <span class="value">${data.item.name}</span>
+                            </div>
+                            <div class="print-item">
+                                <span class="label">Jumlah</span>
+                                <span class="value">${data.item.qty} Koli</span>
+                            </div>
+                            <div class="print-item">
+                                <span class="label">Berat</span>
+                                <span class="value">${data.item.weight} Kg</span>
+                            </div>
+                        </div>
+                        <div class="print-grid-3" style="margin-top: 8px;">
+                            <div class="print-item">
+                                <span class="label">Nilai Barang</span>
+                                <span class="value">${formatRupiah(data.item.value)}</span>
+                            </div>
+                            <div class="print-item" style="grid-column: span 2;">
+                                <span class="label">Catatan</span>
+                                <span class="value">${data.item.notes}</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="print-section-full">
+                        <h3>🚚 LAYANAN PENGIRIMAN</h3>
+                        <div class="print-grid-4">
+                            <div class="print-item">
+                                <span class="label">Jenis Layanan</span>
+                                <span class="value">${data.service.type}</span>
+                            </div>
+                            <div class="print-item">
+                                <span class="label">Pembayaran</span>
+                                <span class="value">${data.service.payment}</span>
+                            </div>
+                            <div class="print-item">
+                                <span class="label">Asuransi</span>
+                                <span class="value">${data.service.insurance}</span>
+                            </div>
+                            <div class="print-item">
+                                <span class="label">Fragile</span>
+                                <span class="value">${data.service.fragile}</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    ${data.item.notes !== '-' ? `
+                    <div class="print-notes">
+                        <strong>⚠️ PERHATIAN:</strong> ${data.item.notes}
+                    </div>
+                    ` : ''}
+
+                    <div class="print-footer">
+                        <div class="signature-box">
+                            <p>Pengirim</p>
+                            <div class="signature-line">(${data.sender.name})</div>
+                        </div>
+                        <div class="signature-box">
+                            <p>Kurir</p>
+                            <div class="signature-line">(............................)</div>
+                        </div>
+                        <div class="signature-box">
+                            <p>Penerima</p>
+                            <div class="signature-line">(${data.receiver.name})</div>
+                        </div>
+                    </div>
+                `;
+
+                printContent.innerHTML = html;
+                printPreview.classList.add('active');
+                document.body.style.overflow = 'hidden';
+            });
+
+            // Print Function
+            btnPrint.addEventListener('click', function() {
+                window.print();
+            });
+
+            // Close Preview Functions
+            function closePreviewModal() {
+                printPreview.classList.remove('active');
+                document.body.style.overflow = 'auto';
+            }
+
+            closePreview.addEventListener('click', closePreviewModal);
+            btnClose.addEventListener('click', closePreviewModal);
+
+            // Close with Escape key
+            document.addEventListener('keydown', function(e) {
+                if (e.key === 'Escape') {
+                    closePreviewModal();
+                }
+            });
+
+            // Close when clicking outside content
+            printPreview.addEventListener('click', function(e) {
+                if (e.target === printPreview) {
+                    closePreviewModal();
+                }
+            });
+
+            console.log('Form initialized successfully!');
+        });
     </script>
 </body>
 </html>
